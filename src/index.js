@@ -86,9 +86,6 @@ HttpProvider.prototype.send = function (payload, callback) {
             var result = request.responseText;
             var error = null;
 
-            console.log('request.status', request.status)
-            console.log('result', result)
-
             try {
                 result = JSON.parse(result);
             } catch(e) {
